@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="How Remy accesses, processes, stores and handles Google Workspace information.">
+  <title>Privacy · Remy Google Workspace</title>
+  <style>
+:root { color-scheme: light; --ink: #24302e; --muted: #5e6a66; --accent: #1d6757; --line: #dbe3dd; --paper: #f8faf7; }
+* { box-sizing: border-box; }
+html { font-size: 17px; scroll-behavior: smooth; }
+body { margin: 0; background: var(--paper); color: var(--ink); font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; line-height: 1.7; }
+.page { max-width: 780px; margin: 0 auto; padding: 0 32px; }
+a { color: var(--accent); text-underline-offset: 4px; }
+a:hover { text-decoration-thickness: 2px; }
+a:focus-visible { outline: 3px solid #80b9a5; outline-offset: 5px; border-radius: 2px; }
+.skip { position: absolute; top: -80px; left: 16px; padding: 8px 14px; background: white; z-index: 2; }
+.skip:focus { top: 12px; }
+.site-header { display: flex; align-items: center; justify-content: space-between; gap: 18px; padding: 27px 0; border-bottom: 1px solid var(--line); }
+.wordmark { display: inline-flex; align-items: center; gap: 10px; color: var(--ink); font-size: 1.05rem; font-weight: 650; text-decoration: none; letter-spacing: -.025em; }
+.mark { display: grid; place-items: center; width: 32px; height: 32px; border: 1px solid var(--accent); border-radius: 50%; color: var(--accent); font-family: Georgia, serif; }
+nav { display: flex; flex-wrap: wrap; gap: 20px; font-size: .85rem; }
+nav a { text-decoration: none; }
+nav a[aria-current] { text-decoration: underline; }
+main { padding: 58px 0 42px; }
+.eyebrow { margin: 0 0 13px; color: var(--accent); font-size: .72rem; font-weight: 650; letter-spacing: .13em; text-transform: uppercase; }
+h1 { max-width: 650px; margin: 0 0 22px; font-size: clamp(2rem, 5vw, 2.85rem); font-weight: 560; letter-spacing: -.045em; line-height: 1.15; }
+h2 { margin: 34px 0 10px; font-size: 1.13rem; font-weight: 650; letter-spacing: -.02em; line-height: 1.35; }
+p { margin: 0 0 19px; }
+.lead { color: #344a42; font-size: 1.15rem; line-height: 1.6; }
+.date { margin: -9px 0 27px; color: var(--muted); font-size: .8rem; }
+.notice { margin: 30px 0; padding: 24px 26px; background: #eaf0e8; border-left: 3px solid #81aa92; border-radius: 0 8px 8px 0; }
+.notice p { margin-bottom: 13px; }
+.text-link { font-size: .91rem; font-weight: 650; }
+.small { color: var(--muted); font-size: .88rem; }
+footer { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px 24px; border-top: 1px solid var(--line); padding: 23px 0 35px; color: var(--muted); font-size: .75rem; }
+@media (max-width: 520px) { .page { padding: 0 23px; } .site-header { padding: 22px 0; } main { padding-top: 40px; } nav { gap: 14px; } .notice { padding: 20px; } }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+</style>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <div class="page">
+    <header class="site-header">
+      <a class="wordmark" href="./" aria-label="Remy home"><span class="mark" aria-hidden="true">R</span> Remy</a>
+      <nav aria-label="Main navigation"><a href="./">About Remy</a><a href="privacy.html" aria-current="page">Privacy</a></nav>
+    </header>
+    <main id="main">
+      <p class="eyebrow">Remy Google Workspace</p>
+      <h1>Privacy notice</h1>
+      <p class="date">Last updated 26 October 2026</p>
+      <p class="lead">Remy is a private personal assistant. This notice covers its Google Workspace connection and this informational website.</p>
+
+      <section aria-labelledby="access">
+        <h2 id="access">Information accessed and purpose</h2>
+        <p>With the account holder’s consent, Remy can access email messages and metadata, calendar information, Drive files, document and spreadsheet contents, and contact details. Its current permissions allow Gmail reading, sending and modification; management of Calendar, Drive, Docs and Sheets; and read-only Contacts access.</p>
+        <p>This information is used to answer questions, produce summaries and carry out authorized assistant tasks. Sending messages, sharing files or making changes requires applicable user authorization.</p>
+      </section>
+
+      <section aria-labelledby="processing">
+        <h2 id="processing">Processing and external services</h2>
+        <p>Remy contacts Google’s APIs from the operator’s computer using OAuth. Google sign-in is handled by Google; Remy does not receive the Google account password. OAuth credentials are stored locally in separate account files with restricted filesystem permissions.</p>
+        <p>Relevant Google information and tool results may be sent to OpenAI as part of an AI request. OpenAI’s policies and account data controls apply, including its retention and model-improvement settings. Processing is therefore not exclusively local. See the <a href="https://openai.com/policies/privacy-policy/">OpenAI Privacy Policy</a>.</p>
+      </section>
+
+      <section aria-labelledby="retention">
+        <h2 id="retention">Storage and retention</h2>
+        <p>Retrieved information and generated results may remain in local conversation history, tool output, notes, persistent memory or backups. There is no guaranteed automatic deletion period across these records. The operator manages local cleanup; provider-held information is governed by the provider’s policies and account controls.</p>
+      </section>
+
+      <section aria-labelledby="control">
+        <h2 id="control">Revocation, deletion and contact</h2>
+        <p>You can remove Remy’s authorization through <a href="https://myaccount.google.com/connections">Google Account connections</a>. Revoking access stops future authorized API access, but does not automatically erase existing local records, backups or information already processed by a provider.</p>
+        <p>For privacy questions or deletion requests, contact the operator through your existing private contact channel or the support contact shown on Google’s consent screen. Local credentials, conversation records, memories and backup copies must be addressed separately. Do not post passwords, tokens or private account contents in public GitHub issues.</p>
+      </section>
+
+      <section aria-labelledby="website">
+        <h2 id="website">This website</h2>
+        <p>This static website has no sign-in, forms, analytics, advertising or embedded third-party resources. It does not receive connected Google account contents. GitHub Pages hosts the site; GitHub records visitor IP addresses for security purposes under the <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub Privacy Statement</a>. External links lead to the named providers’ websites.</p>
+      </section>
+    </main>
+    <footer><a href="./">Back to Remy</a><span>Independent personal project.</span></footer>
+  </div>
+</body>
+</html>
